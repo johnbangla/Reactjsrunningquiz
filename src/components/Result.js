@@ -63,7 +63,7 @@ handleSubmit(e){
   var csrftoken = this.getCookie('csrftoken')
 
   // var url = 'http://localhost:8000/api/task-create/'
-  var url = 'http://johnbangla.pythonanywhere.com/api/task-create/'
+  var url = 'https://johnbangla.pythonanywhere.com/api/task-create/'
 
 
 
