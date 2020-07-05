@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "../assets/style.css"
 import Thank  from  './Thanks';
 class PostForm extends Component {
   constructor(props){
@@ -36,7 +37,7 @@ class PostForm extends Component {
         }
     }
     return cookieValue;
-}  //browser cookei was used 
+}  //browser cookei was used need to think
 handleChange(e){
   var name = e.target.name
   var value = e.target.value
@@ -62,7 +63,7 @@ handleSubmit(e){
 
   var csrftoken = this.getCookie('csrftoken')
 
-  // var url = 'http://localhost:8000/api/task-create/'
+  //  var url = 'http://localhost:8000/api/task-create/'
   var url = 'https://johnbangla.pythonanywhere.com/api/task-create/'
 
 
@@ -118,7 +119,13 @@ handleSubmit(e){
                         </div>
                     </div>
               </form>
-  : null            
+  : 
+  <div className="score-board">
+ সর্বাধিক 3 বার আপনি খেলতে পারেন আমরা best one গণনা করব। প্রতিবার নাম লিখুন খেলার শেষ পর্যন্ত
+   </div>     
+  
+  
+
   }
            
             </div>
@@ -131,7 +138,10 @@ handleSubmit(e){
       Play again!
     </button>
   
-   :null 
+   :null
+
+    
+   
    }
         
       </div>

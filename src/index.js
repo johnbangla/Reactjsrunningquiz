@@ -14,9 +14,9 @@ this.state = {
 questionBank : [],score : 0,responses : 0 ,
 activeItem:{
   id:null, 
-  title:"Arisha",
+  title:"",
   completed:false,
-  score : 100,
+  score : 0,
 } ,
 
 
@@ -45,42 +45,42 @@ getCookie(name) {
 
 
 //insert command 
-handleSubmit(e){
-  e.preventDefault()
+// handleSubmit(e){
+//   e.preventDefault()
 
   
-  alert('ITEM:', this.state.activeItem)
+//   alert('ITEM:', this.state.activeItem)
 
-  var csrftoken = this.getCookie('csrftoken')
-  this.setState({title  : 'john' ,score : this.state.score});
-  //var url = 'http://localhost:8000/api/task-create/'
-var url = ' http://johnbangla.pythonanywhere.com/api/task-create/'
+//   var csrftoken = this.getCookie('csrftoken')
+//   this.setState({title  : 'john' ,score : this.state.score});
+//   //var url = 'http://localhost:8000/api/task-create/'
+// var url = ' http://johnbangla.pythonanywhere.com/api/task-create/'
  
 
 
-  console.log('ITEM:', this.state.activeItem)
-  fetch(url, {
-    method:'POST',
-    headers:{
-      'Content-type':'application/json',
-      'X-CSRFToken':csrftoken,
-    },
-    body:JSON.stringify(this.state.activeItem)  //writing data from reactjs to django
-  }).then((response)  => {
-      //this.fetchTasks()  //showing data after insert data 
-      this.setState({     //after inser variable must be clear
-         activeItem:{
-        id:null, 
-        title:'',
-        completed:false,
-        score:0,
-      }
-      })
-  }).catch(function(error){
-    console.log('ERROR:', error)
-  })
+//   console.log('ITEM:', this.state.activeItem)
+//   fetch(url, {
+//     method:'POST',
+//     headers:{
+//       'Content-type':'application/json',
+//       'X-CSRFToken':csrftoken,
+//     },
+//     body:JSON.stringify(this.state.activeItem)  //writing data from reactjs to django
+//   }).then((response)  => {
+//       //this.fetchTasks()  //showing data after insert data 
+//       this.setState({     //after inser variable must be clear
+//          activeItem:{
+//         id:null, 
+//         title:'',
+//         completed:false,
+//         score:0,
+//       }
+//       })
+//   }).catch(function(error){
+//     console.log('ERROR:', error)
+//   })
 
-}  //data insert method is completed here
+// }  //data insert method is completed here
 
 
 //insert command end
@@ -115,42 +115,42 @@ playAgain = () => {
   });
 };
 
-saveResult = () => {
+// saveResult = () => {
 
 
-//alert('loading..')
-//e.preventDefault()
-alert('ITEM:', this.state.activeItem)
+// //alert('loading..')
+// //e.preventDefault()
+// alert('ITEM:', this.state.activeItem)
 
-var csrftoken = this.getCookie('csrftoken')
-var url = ' http://johnbangla.pythonanywhere.com/api/task-create/'
-// var url = 'http://localhost:8000/api/task-create/'
-
-
-fetch(url, {
-  method:'POST',
-  headers:{
-    'Content-type':'application/json',
-    'X-CSRFToken':csrftoken,
-  },
-  body:JSON.stringify(this.state.activeItem)  //writing data from reactjs to django
-}).then((response)  => {
-    //this.fetchTasks()  //showing data after insert data 
-    this.setState({     //after inser variable must be clear
-       activeItem:{
-      id:null, 
-      title:'',
-      completed:false,
-      score:0,
-    }
-    })
-}).catch(function(error){
-  console.log('ERROR:', error)
-})
+// var csrftoken = this.getCookie('csrftoken')
+// var url = ' http://johnbangla.pythonanywhere.com/api/task-create/'
+// // var url = 'http://localhost:8000/api/task-create/'
 
 
+// fetch(url, {
+//   method:'POST',
+//   headers:{
+//     'Content-type':'application/json',
+//     'X-CSRFToken':csrftoken,
+//   },
+//   body:JSON.stringify(this.state.activeItem)  //writing data from reactjs to django
+// }).then((response)  => {
+//     //this.fetchTasks()  //showing data after insert data 
+//     this.setState({     //after inser variable must be clear
+//        activeItem:{
+//       id:null, 
+//       title:'',
+//       completed:false,
+//       score:0,
+//     }
+//     })
+// }).catch(function(error){
+//   console.log('ERROR:', error)
+// })
 
-};
+
+
+//};
 
 componentDidMount(){
 this.getQuestions();
@@ -161,7 +161,9 @@ render(){
 return(
 <div className="container">
 
-<div className="title grow">True Man True Help Quiz 2020 july</div>
+<div className="title grow">ট্রু ম্যান ট্রু হেল্প Quiz 2020 .সর্বাধিক 3 বার আপনি খেলতে পারেন  আমরা best one গণনা করব। প্রতিবার নাম লিখুন খেলার 
+শেষ পর্যন্ত
+</div>
 
 { this.state.questionBank.length > 0 && this.state.responses < 5   && this.state.questionBank.map(
 
