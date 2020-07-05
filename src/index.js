@@ -53,8 +53,8 @@ handleSubmit(e){
 
   var csrftoken = this.getCookie('csrftoken')
   this.setState({title  : 'john' ,score : this.state.score});
-  var url = 'http://localhost:8000/api/task-create/'
-
+  //var url = 'http://localhost:8000/api/task-create/'
+var url = ' http://johnbangla.pythonanywhere.com/api/task-create/'
  
 
 
@@ -123,8 +123,8 @@ saveResult = () => {
 alert('ITEM:', this.state.activeItem)
 
 var csrftoken = this.getCookie('csrftoken')
-
-var url = 'http://localhost:8000/api/task-create/'
+var url = ' http://johnbangla.pythonanywhere.com/api/task-create/'
+// var url = 'http://localhost:8000/api/task-create/'
 
 
 fetch(url, {
