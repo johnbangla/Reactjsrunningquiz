@@ -105,7 +105,7 @@ this.setState({score : this.state.score  + 1
 
 this.setState({
 
-  responses : this.state.responses < 5 ? this.state.responses + 1 : 5
+  responses : this.state.responses < 20 ? this.state.responses + 1 : 20
 });
 };
 
@@ -165,7 +165,7 @@ return(
 শেষ পর্যন্ত
 </div>
 
-{ this.state.questionBank.length > 0 && this.state.responses < 5   && this.state.questionBank.map(
+{ this.state.questionBank.length > 0 && this.state.responses < 20   && this.state.questionBank.map(
 
 ({question,answers,correct,questionId}) => ( <QuestionBox question={question} options = {answers} key = {questionId} 
 
@@ -177,7 +177,7 @@ selected={answer => this.ComputedAnswer(answer,correct)}
 
 
 )}
-{ this.state.responses === 5 ? (<PostForm  score={this.state.score} playAgain={this.playAgain}/>) : null }
+{ this.state.responses === 20 ? (<PostForm  score={this.state.score} playAgain={this.playAgain}/>) : null }
 </div>
 
 
