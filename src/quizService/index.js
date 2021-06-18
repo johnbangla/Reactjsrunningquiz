@@ -1,59 +1,59 @@
 const qBank = [
   {
     question:
-      "কে দ্বিতীয় খলিফা?   ",
-    answers: ["ইব্রাহিম", "ওমর (রাঃ)", "আদম()", "উসমান (রাঃ)"],
-    correct: "ওমর (রাঃ)",
+      "বিশ্বের সেরা ব্যক্তিত্ব?   ",
+    answers: ["ইব্রাহিম", "ওমর (রাঃ)", "আদম()", "হযরত মোহাম্মদ (ছাঃ)"],
+    correct: "হযরত মোহাম্মদ (ছাঃ)",
     questionId: "099099"
   },
   {
     question:
-    'Who was the first caliph of islam',
-    answers: ["Hazrat Ali (R)", "Hazrat Usman (R)", "Hazrat Umar (R)", "Hazrat Abu Bakar"],
-    correct: "Hazrat Abu Bakar",
+    'বদরের যুদ্ধে। জেনারেলের প্রধানের নাম কী?',
+    answers: ["Hazrat Ali (R)", "হযরত মোহাম্মদ (ছাঃ)", "Hazrat Umar (R)", "Hazrat Abu Bakar"],
+    correct: "হযরত মোহাম্মদ (ছাঃ)",
     questionId: "183452"
   },
   {
     question:
-      "What is the meaning of arabic word siddique?",
-      answers : ["The one who believe",
-        "The one who doesnt believe",
-        "The one who is a good warrior",
-        "The one who prays"],
+      "কোন নবী বিশেষ দুআ ব্যবহার করেননি??",
+      answers : ["মুসা",
+        "ইব্রাহিম",
+        "সুলেমান",
+        "হযরত মোহাম্মদ (ছাঃ)"],
         
-    correct: "The one who believe",
+    correct: "হযরত মোহাম্মদ (ছাঃ)",
     questionId: "267908"
   },
   {
-    question:"Who was the 1st ambassador of islam to Madina?",
-    answers: ["Hazrat Mus’ab(R)"," Hazrat Abu Huraira (R) ",  
-      "Hazrat Ubaid  (R) ",  "Hazrat uk’ba  "],
+    question:"নবী হজরত মুহাম্মদ (ছাঃ) কীভাবে তিনি তাঁর সম্প্রদায়কে ডেকেছিলেন।?",
+    answers: ["বন্ধু"," কাজিন ",  
+      "আত্মীয় ",  "ভাই  "],
       
-    correct: "Hazrat Mus’ab(R)",
+    correct: "ভাই",
     questionId: "333247"
   },
  
   {
-    question: "The miracle journey of prophet (sm) held at",
-    answers : ["8th year of his prophethood",
-      "5th year of his prophethood",
-      "10th year of his prophethood",
-      "12th  year of his prophethood"],
+    question: "একজন ধনী মহিলা কি তার গরীব স্বামীকে যাকাত দিতে পারে?",
+    answers : ["না",
+      "হ্যাঁ",
+      "হতে পারে",
+      "সম্ভবত না"],
       
-    correct: "10th year of his prophethood",
+    correct: "হ্যাঁ",
     questionId: "2838920"
   },
   {
-  question: "At present Masjidul Aksa is situated at?" ,
-  answers : ["Soudi Arabia "," Iraq "," Iran","Palestine"],
-  correct: "Palestine",
+  question: "কোন বইটি বিশ্বব্যাপী সবচেয়ে বেশি গবেষণা হচ্ছে?" ,
+  answers : ["আল কোরআন "," কবিতা "," ফিল্ম","গানের বই"],
+  correct: "আল কোরআন",
   questionId: "2838901"
   },
   {
-    question:"Which is the first qibla of islam?",
-  answers : ["Qaba sharif", "Masjid e nababi",  
-   "Masjidul Aksa", " Masjidul Mecca"],
-   correct: "Masjidul Aksa",
+    question:"অবিশ্বাসী লোকেরা কীভাবে ইসলামকে গোমরাহ করে??",
+  answers : ["মিথ্যা মিশ্রিত করে", "আধো গল্প প্রচার",  
+   "সত্য রেফারেন্স", "সম্পূর্ণ গল্প"],
+   correct: "আধো গল্প প্রচার",
    questionId: "2838921"
   },
   {
@@ -117,84 +117,10 @@ const qBank = [
   questionId: "28389008"
   },
 
-  {
-  question: "Hazrat Ibrahim (pbuh) was ?",
-  answers : ["5th generation after Nu’ah (pbuh)",
-  "10th generation after Nu’ah (pbuh)",
-  "15th generation after Nu’ah (pbuh)",
-  "20th generation after Nu’ah (pbuh)"],
-  correct: "10th generation after Nu’ah (pbuh)",
-  questionId: "2838909"
-  },
-
-  {
-    question:"Hazrat Ibrahim (pbuh) was born in ?",
-  answers : ["Madina ",  " Mecca",  "Babylon",  " Zerusalem"],
-  correct: "Babylon",
-  questionId: "28389010"
-  },
-  {
-
-    question:"The father of Hazrat Ibrahim (pbuh) was ?",
-  answers : ["Carpenter" ,  "idol maker",  "big farmer ",   "teacher"],
-  correct: "idol maker",
-  questionId: "2838911"
-  },
-
-  {
-    question: "Hazrat Lut (pbuh) was ___ of Hazrat Ibrahim (pbuh) ?",
-    answers :["Nephew"," Niece ",  " Brother ",  "Uncle"],
-    correct: "Nephew",
-    questionId: "2838912"
-  },
-
-  {
-    question: "The black stone (Hazre Asoad) that is kept in Qa’ba , came from?",
-    answers :["Heaven"   , " Hell  ", " Zerusalem ", "Babylon"],
-  correct: "Heaven",
-  questionId: "2838913"
-  },
-
-  {
-  question: "Hazrat Ibrahim (pbuh) was ?",
-  answers :["about 150 years  ", "about 175 years",   
-  "about 200 years",  "about 200 years",
-  "When the,Youth", "Old "," very old"],
-  correct: "about 175 years",
-  questionId: "2838914"
-  },
-
-  {
-    question: "Mother of Hazrat Ismail (pbuh)?",
-    answers :[ "Hazrat Saira (pbuh)  ", "Hazrat Hazera (pbuh)",
-       " Hazrat Asiya (pbuh) ", " Hazrat Morium (pbuh)"],
-       correct: "Hazrat Hazera (pbuh)",
-       questionId: "2838915"
-  },
+  
 
   
 
-  {
-    question:"After the rain and storm, the people of Hud (pbuh) migrated to ?",
-    answers :[" Iraq    ", "Iran",   " Yemen",  " Oman"],
-    correct: "Yemen",
-    questionId: "2838917"
-  },
-
-  {
-  question:"The number of Maqqi sura in the holy q’uaran is ?",
-  answers : [" 86",    " 20. ",  " 36",   "76"],
-  correct: "86",
-  questionId: "2838918"
-  },
-  {
-
-  question:"The Eid ul Azha takes place on ?",
-  answers : ["1st Zilkad  ",   "10th Zilkad",
-  "1st zilhajj ",  "10th Zilhajj"],
-  correct: "10th Zilhajj",
-  questionId: "2838919"
-  }
   
   
 ];
