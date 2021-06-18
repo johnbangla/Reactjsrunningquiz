@@ -177,7 +177,7 @@ selected={answer => this.ComputedAnswer(answer,correct)}
 
 
 )}
-{ this.state.responses === 20 ? (<PostForm  score={this.state.score} playAgain={this.playAgain}/>) : null }
+{ this.state.responses === 13 ? (<PostForm  score={this.state.score} playAgain={this.playAgain}/>) : null }
 </div>
 
 

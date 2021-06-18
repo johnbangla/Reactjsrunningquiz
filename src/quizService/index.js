@@ -125,5 +125,5 @@ const qBank = [
   
 ];
 
-export default (n = 20) =>
+export default (n = 13) =>
   Promise.resolve(qBank.sort(() => 0.5 - Math.random()).slice(0, n));
